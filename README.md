@@ -1,6 +1,6 @@
 # Cross-Checkpoint Portability of Subject-Identity LoRA Fine-Tunes in SDXL
 
-<!-- DOI badge goes here once the first release is published — see "Releases & DOIs" below -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21282393.svg)](https://doi.org/10.5281/zenodo.21282393)
 
 A small technical study of whether a subject-identity LoRA trained against
 one SDXL-derivative checkpoint (Juggernaut XL) transfers to other SDXL
@@ -30,17 +30,19 @@ link back to the ORCID profile as a "work" automatically.
 
 This repository is connected to Zenodo's GitHub integration, which is
 release-triggered rather than push-triggered: a DOI is minted only when a
-GitHub Release is published here, never automatically on a commit. No
-release has been published yet, so there's no DOI to cite below — that will
-change once one is cut.
+GitHub Release is published here, never automatically on a commit.
 
-Publishing a version: draft a GitHub Release (tagged, e.g. `v0.1.0`) and
-publish it — Zenodo archives the repository at that tag and mints or updates
-a DOI. The trained weights (`Arynwood_lora.safetensors`) aren't part of that
-archive, since Zenodo's GitHub capture only covers tracked git content, not
-large binaries — they're added directly to the resulting Zenodo deposit as a
-separate upload. See [`weights/README.md`](weights/README.md) for that file's
-status and, once published, its DOI.
+- **Concept DOI** (always resolves to the latest version, use this one for
+  citing the project generally): [10.5281/zenodo.21282393](https://doi.org/10.5281/zenodo.21282393)
+- **Current version DOI** (v0.1.1): [10.5281/zenodo.21282394](https://doi.org/10.5281/zenodo.21282394)
+
+Publishing a new version: draft a GitHub Release (tagged, e.g. `v0.2.0`) and
+publish it — Zenodo archives the repository at that tag and adds a new
+version under the same concept DOI. The trained weights
+(`Arynwood_lora.safetensors`) aren't part of that archive, since Zenodo's
+GitHub capture only covers tracked git content, not large binaries — they're
+added directly to the Zenodo deposit as a separate upload, not yet done. See
+[`weights/README.md`](weights/README.md) for that file's status.
 
 ## Scope
 

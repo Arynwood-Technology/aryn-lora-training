@@ -8,7 +8,8 @@ authors:
     orcid: "https://orcid.org/0009-0007-8723-2857"
 license: CC-BY-4.0
 repository-code: "https://github.com/Arynwood-Technology/aryn-lora-training"
-version: 0.1.0
+doi: "10.5281/zenodo.21282393"
+version: 0.1.1
 date-released: "2026-07-09"
 abstract: >-
   Training pipeline, configuration, and methodology for a personal-identity
