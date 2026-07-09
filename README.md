@@ -22,12 +22,9 @@ Training images are not included (personal photo dataset).
 
 See [CITATION.cff](CITATION.cff). Licensed under [CC-BY-4.0](LICENSE).
 
-**Before your first publish:** `CITATION.cff` and `.zenodo.json` currently
-list the author without an ORCID iD. Once you've registered one at
-[orcid.org](https://orcid.org), add it to both files (uncomment the `orcid:`
-line in `CITATION.cff`, add an `"orcid"` field to the `creators` entry in
-`.zenodo.json`) — that's what actually links a published DOI back to your
-ORCID profile as a "work."
+Author ORCID iD: [0009-0007-8723-2857](https://orcid.org/0009-0007-8723-2857)
+— set in both `CITATION.cff` and `.zenodo.json`, so a published DOI will
+link back to the ORCID profile as a "work" automatically.
 
 ## Publishing a new version
 

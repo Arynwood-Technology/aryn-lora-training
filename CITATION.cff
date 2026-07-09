@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: Noble
     given-names: Lorelei
-    # orcid: "https://orcid.org/XXXX-XXXX-XXXX-XXXX"  # TODO: add once registered
+    orcid: "https://orcid.org/0009-0007-8723-2857"
 license: CC-BY-4.0
 repository-code: "https://github.com/SkyeVault/aryn-lora-training"
 version: 0.1.0
