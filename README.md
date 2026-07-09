@@ -1,6 +1,6 @@
 # Cross-Checkpoint Portability of Subject-Identity LoRA Fine-Tunes in SDXL
 
-[![DOI](https://zenodo.org/badge/DOI/PLACEHOLDER.svg)](#) <!-- TODO: replace with the real Zenodo DOI badge after your first release -->
+<!-- DOI badge goes here once the first release is published — see "Releases & DOIs" below -->
 
 A small technical study of whether a subject-identity LoRA trained against
 one SDXL-derivative checkpoint (Juggernaut XL) transfers to other SDXL
@@ -14,7 +14,7 @@ Full write-up: [docs/methodology.md](docs/methodology.md)
 - `scripts/prepare_lora_dataset.py` — dataset preprocessing + WD14 auto-captioning
 - `scripts/run_lora_training.py` — kohya_ss `sdxl_train_network.py` wrapper used for the training run
 - `docs/methodology.md` — dataset, training config, and the cross-checkpoint portability analysis
-- `weights/` — pointer to the trained `.safetensors` file (hosted on Zenodo, not in git — see below)
+- `weights/` — pointer to the trained `.safetensors` file (hosted on Zenodo, not in git — see [`weights/README.md`](weights/README.md))
 
 Training images are not included (personal photo dataset).
 
@@ -26,37 +26,25 @@ Author ORCID iD: [0009-0007-8723-2857](https://orcid.org/0009-0007-8723-2857)
 — set in both `CITATION.cff` and `.zenodo.json`, so a published DOI will
 link back to the ORCID profile as a "work" automatically.
 
-## Publishing a new version
+## Releases & DOIs
 
-This repo is wired for Zenodo's GitHub integration, which is release-triggered,
-not push-triggered — nothing publishes automatically on `git push`. A DOI is
-only minted when *you* cut a GitHub Release.
+This repository is connected to Zenodo's GitHub integration, which is
+release-triggered rather than push-triggered: a DOI is minted only when a
+GitHub Release is published here, never automatically on a commit. No
+release has been published yet, so there's no DOI to cite below — that will
+change once one is cut.
 
-**One-time setup (do this yourself — needs your own login):**
+Publishing a version: draft a GitHub Release (tagged, e.g. `v0.1.0`) and
+publish it — Zenodo archives the repository at that tag and mints or updates
+a DOI. The trained weights (`Arynwood_lora.safetensors`) aren't part of that
+archive, since Zenodo's GitHub capture only covers tracked git content, not
+large binaries — they're added directly to the resulting Zenodo deposit as a
+separate upload. See [`weights/README.md`](weights/README.md) for that file's
+status and, once published, its DOI.
 
-1. Push this repo to a public GitHub repo (see below).
-2. Log into [zenodo.org](https://zenodo.org) with your GitHub account.
-3. Go to your Zenodo GitHub settings (Account → GitHub), find this
-   repository in the list, and flip its toggle on.
+## Scope
 
-**Every time you want to publish a version:**
-
-1. On GitHub, draft a new **Release** (tag it, e.g. `v0.1.0`) and click
-   *Publish release*. Zenodo archives the repo at that tag and mints/updates
-   a DOI automatically — this is the manual trigger, entirely under your
-   control.
-2. If this version should include the trained weights: go to the new Zenodo
-   deposit (it starts as unpublished/editable right after step 1 fires),
-   add `Arynwood_lora.safetensors` as an extra file via Zenodo's uploader,
-   then publish the deposit. This is a separate manual drag-and-drop step
-   by design — the weight file never touches git or GitHub.
-3. Update `weights/README.md` with the resulting file's DOI/link, and the
-   DOI badge at the top of this README, then commit that small update
-   (does not require cutting another release).
-
-## Repo scope note
-
-This repository intentionally contains *only* the LoRA research artifact —
-it does not include any code from the private commercial platform this
-training pipeline was originally built inside.
-# aryn-lora-training
+This repository contains the LoRA research artifact only — training
+scripts, configuration, and methodology. It does not include the private
+platform this pipeline was originally developed inside, nor the personal
+photo dataset used for training.
