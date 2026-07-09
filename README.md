@@ -62,3 +62,4 @@ only minted when *you* cut a GitHub Release.
 This repository intentionally contains *only* the LoRA research artifact —
 it does not include any code from the private commercial platform this
 training pipeline was originally built inside.
+# aryn-lora-training
