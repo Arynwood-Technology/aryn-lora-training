@@ -1,0 +1,21 @@
+{
+  "title": "Cross-Checkpoint Portability of Subject-Identity LoRA Fine-Tunes in SDXL",
+  "description": "Training pipeline, configuration, and methodology for a personal-identity SDXL LoRA fine-tune, examining whether a LoRA trained against one SDXL-derivative checkpoint (Juggernaut XL) transfers to other SDXL derivatives (e.g. DreamShaper XL Turbo) without retraining, and why it cannot transfer to an architecturally distinct base such as SD1.5. See docs/methodology.md for the full write-up.",
+  "creators": [
+    {
+      "name": "Noble, Lorelei"
+    }
+  ],
+  "license": "CC-BY-4.0",
+  "upload_type": "software",
+  "access_right": "open",
+  "keywords": [
+    "stable-diffusion",
+    "sdxl",
+    "lora",
+    "fine-tuning",
+    "generative-ai",
+    "diffusion-models",
+    "personalization"
+  ]
+}
