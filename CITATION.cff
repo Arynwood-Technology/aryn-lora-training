@@ -7,7 +7,7 @@ authors:
     given-names: Lorelei
     # orcid: "https://orcid.org/XXXX-XXXX-XXXX-XXXX"  # TODO: add once registered
 license: CC-BY-4.0
-repository-code: "https://github.com/SkyeVault/arynwood-lora-portability"
+repository-code: "https://github.com/SkyeVault/aryn-lora-training"
 version: 0.1.0
 date-released: "2026-07-09"
 abstract: >-
