@@ -9,7 +9,7 @@ authors:
 license: CC-BY-4.0
 repository-code: "https://github.com/Arynwood-Technology/aryn-lora-training"
 doi: "10.5281/zenodo.21282393"
-version: 0.1.1
+version: 0.2.0
 date-released: "2026-07-09"
 abstract: >-
   Training pipeline, configuration, and methodology for a personal-identity

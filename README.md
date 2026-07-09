@@ -14,7 +14,7 @@ Full write-up: [docs/methodology.md](docs/methodology.md)
 - `scripts/prepare_lora_dataset.py` — dataset preprocessing + WD14 auto-captioning
 - `scripts/run_lora_training.py` — kohya_ss `sdxl_train_network.py` wrapper used for the training run
 - `docs/methodology.md` — dataset, training config, and the cross-checkpoint portability analysis
-- `weights/` — pointer to the trained `.safetensors` file (hosted on Zenodo, not in git — see [`weights/README.md`](weights/README.md))
+- `weights/` — pointer to the two trained `.safetensors` files (hosted on Zenodo, not in git — see [`weights/README.md`](weights/README.md))
 
 Training images are not included (personal photo dataset).
 
@@ -34,15 +34,20 @@ GitHub Release is published here, never automatically on a commit.
 
 - **Concept DOI** (always resolves to the latest version, use this one for
   citing the project generally): [10.5281/zenodo.21282393](https://doi.org/10.5281/zenodo.21282393)
-- **Current version DOI** (v0.1.1): [10.5281/zenodo.21282394](https://doi.org/10.5281/zenodo.21282394)
+- **Current version DOI** (v0.2.0): [10.5281/zenodo.21282597](https://doi.org/10.5281/zenodo.21282597)
 
-Publishing a new version: draft a GitHub Release (tagged, e.g. `v0.2.0`) and
-publish it — Zenodo archives the repository at that tag and adds a new
-version under the same concept DOI. The trained weights
-(`Arynwood_lora.safetensors`) aren't part of that archive, since Zenodo's
-GitHub capture only covers tracked git content, not large binaries — they're
-added directly to the Zenodo deposit as a separate upload, not yet done. See
-[`weights/README.md`](weights/README.md) for that file's status.
+v0.1.1 was code/methodology only. v0.2.0 adds both trained LoRA checkpoints
+(Juggernaut XL and DreamShaper XL Turbo) as direct uploads to the Zenodo
+deposit — see [`weights/README.md`](weights/README.md) for file details and
+checksums. As with the code, this was a manual, deliberate publish, not
+something that happens automatically on push.
+
+Publishing a further version: draft a GitHub Release (tagged, e.g.
+`v0.3.0`) and publish it — Zenodo archives the repository at that tag and
+adds a new version under the same concept DOI. Note that a GitHub Release
+only archives tracked git content; any additional large files (like the
+weights) still need a separate manual upload directly to that version's
+Zenodo deposit.
 
 ## Scope
 
